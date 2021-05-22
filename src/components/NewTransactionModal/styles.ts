@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
+
 export const Container = styled.div`
     h2 {
         color: var(--text-title-color);
         font-size: 1.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 2rem;+
     }
 
     input {
@@ -36,6 +37,24 @@ export const Container = styled.div`
         color: #FFF;
         border-radius: 0.25rem;
         border: 0;
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
+        transition: filter 0.2s;
+
+        &:hover {
+            filter: brightness(0.9);
+        }
     }
+`;
+
+export const TransactionTypeContainer = styled.div`
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+
 `;
